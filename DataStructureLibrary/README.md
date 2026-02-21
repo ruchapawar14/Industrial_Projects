@@ -1,80 +1,82 @@
-# Generalized Data Structure Library (C++)
+# Generic Data Structure Library (C++)
 
-This project contains a generic implementation of fundamental linear data structures in C++ using templates.  
-The main objective was to understand the internal working of commonly used data structures by implementing them from scratch without using STL containers.
+![C++](https://img.shields.io/badge/C++-Generic%20Programming-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Data Structures](https://img.shields.io/badge/Data%20Structures-Linked%20List%20%7C%20Stack%20%7C%20Queue-orange?style=for-the-badge)
+![OOP](https://img.shields.io/badge/Paradigm-Object%20Oriented-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Educational-informational?style=for-the-badge)
 
-The implementation focuses on pointer manipulation, dynamic memory handling, and reusable design through generic programming.
+A template-based implementation of fundamental linear data structures in C++, built from scratch without using STL containers.
+
+This project focuses on understanding low-level data structure mechanics including dynamic memory allocation, pointer manipulation, and modular object-oriented design.
+
+---
+
+## Project Overview
+
+The goal of this implementation is to strengthen foundational knowledge of core data structures by designing them manually using C++ templates.
+
+Each structure is implemented generically using:
+
+allowing it to work with multiple data types such as:
+
+- int  
+- float  
+- char  
+- double  
+- user-defined objects  
+
+---
 
 ## Implemented Data Structures
 
-### Linked Lists
-- Singly Linear Linked List
-- Singly Circular Linked List
-- Doubly Linear Linked List
-- Doubly Circular Linked List
-
-Supported operations:
-- InsertFirst / InsertLast
-- DeleteFirst / DeleteLast
-- InsertAtPos
-- DeleteAtPos
-- Display
-- Count (O(1))
+| Data Structure | Class Name | Characteristics |
+|---------------|------------|----------------|
+| Singly Linear Linked List | `SinglyLLL<T>` | Forward traversal |
+| Singly Circular Linked List | `SinglyCLL<T>` | Circular forward linking |
+| Doubly Linear Linked List | `DoublyLLL<T>` | Bidirectional traversal |
+| Doubly Circular Linked List | `DoublyCLL<T>` | Circular bidirectional linking |
+| Stack | `Stack<T>` | LIFO principle |
+| Queue | `Queue<T>` | FIFO principle |
 
 ---
 
-### Stack (LIFO)
-Implemented using linked list structure.
+## Core Features
 
-Operations:
-- push()
-- pop()
-- peep()
-- Display()
-- Count()
-
----
-
-### Queue (FIFO)
-Implemented using first and last pointers.
-
-Operations:
-- enqueue()
-- dequeue()
-- Display()
-- Count()
+- Generic template-based architecture  
+- Modular separation of Node and Container classes  
+- Position-based insertion and deletion  
+- Circular and linear structure handling  
+- O(1) element counting using internal counter  
+- Dynamic memory allocation using `new` and `delete`  
+- Visual `Display()` representation of structures  
 
 ---
 
-## Technical Concepts Used
+## Design Architecture
 
-- C++ Templates (Generic Programming)
-- Object Oriented Design
-- Dynamic Memory Allocation (`new` / `delete`)
-- Pointer traversal and node linking
-- Circular and doubly linked structures
-- Time complexity tracking using node counter
+Each data structure follows a two-layer design:
 
----
+### Node Class
+Responsible for:
+- Storing data  
+- Managing pointer links (`next` / `prev`)  
 
-## Design Approach
-
-Each data structure is divided into:
-
-- **Node Class** → stores data and pointer links  
-- **Functionality Class** → handles operations and logic
-
-This separation keeps the design modular and reusable.
+### Container Class
+Responsible for:
+- Insert / Delete operations  
+- Traversal logic  
+- Size tracking  
+- Structural integrity  
 
 ---
 
-## Complexity Summary
+## Time Complexity Analysis
 
 | Operation | Complexity |
 |-----------|------------|
 | InsertFirst | O(1) |
 | DeleteFirst | O(1) |
-| InsertLast (Singly LL) | O(n) |
+| InsertLast (Singly Linear) | O(n) |
 | InsertLast (Circular / Doubly) | O(1) |
 | InsertAtPos | O(n) |
 | DeleteAtPos | O(n) |
@@ -83,3 +85,6 @@ This separation keeps the design modular and reusable.
 | Count | O(1) |
 
 ---
+
+## 👤 Author
+### Rucha Hanumant Pawar.
