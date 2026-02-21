@@ -4,7 +4,6 @@
 ![System Programming](https://img.shields.io/badge/System-Programming-orange?style=for-the-badge)
 ![Linux File System](https://img.shields.io/badge/Linux-File%20System-yellow?style=for-the-badge)
 ![OS Concepts](https://img.shields.io/badge/Operating%20System-Internals-blueviolet?style=for-the-badge)
-![Author](https://img.shields.io/badge/Author-Rucha%20Hanumant%20Pawar-lightgrey?style=for-the-badge)
 
 ---
 
@@ -99,6 +98,8 @@ File gets succesfully deleted
 \ CVFS : > exit
 ```
 
+## 👤 Author
+### Rucha Hanumant Pawar.
 
 
 
