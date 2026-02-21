@@ -15,16 +15,13 @@ This project focuses on understanding low-level data structure mechanics includi
 
 The goal of this implementation is to strengthen foundational knowledge of core data structures by designing them manually using C++ templates.
 
-Each structure is implemented generically using:
+Each data structure is implemented using generic programming (`template <class T>`), allowing it to work with multiple data types such as:
 
-allowing it to work with multiple data types such as:
-
-- int  
-- float  
-- char  
-- double  
-- user-defined objects  
-
+- int
+- float
+- char
+- double
+- user-defined objects
 ---
 
 ## Implemented Data Structures
