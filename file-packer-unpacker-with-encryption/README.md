@@ -40,7 +40,7 @@ This project demonstrates core concepts of **Java File Handling, I/O Streams, En
 - (Optional) GUI support using Java Swing
 
 ### 🌍 Cross Platform
-Runs on any system supporting **Java Runtime Environment (JRE)**.
+Runs on any system supporting **Java Runtime Environment (JRE).
 ---
 
 ## 🎯 Learning Outcomes
